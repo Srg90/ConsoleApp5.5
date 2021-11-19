@@ -16,14 +16,15 @@ namespace ConsoleApp5._5
             int N2 = N1;
             Console.WriteLine();
             int[,] number = new int[N1, N2];
-            Random random = new Random();
+            //Random random = new Random();
           
             for (int i = 0; i < N1; i++)
             {
                 
                 for (int j = 0; j < N2; j++)
                 {
-                    number[i, j] = random.Next(0, 100);
+                    //number[i, j] = random.Next(0, 100);
+                    number[i, j] = 1 - (i + j) % 2;
                     Console.Write("{0,3} ", number[i, j]);
                    
                 }
